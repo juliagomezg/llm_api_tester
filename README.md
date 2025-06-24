@@ -19,41 +19,28 @@ Este proyecto es una suite de pruebas automatizadas para validar respuestas de m
 ## 🖥️ ¿Cómo correrlo localmente?
 
 1. Clona el repositorio:
-   ```bash
+   
    git clone https://github.com/juliagomezg/llm_api_tester.git
    cd llm_api_tester
+   
 Crea un archivo .env con tus llaves de API:
 
-ini
-Copiar
-Editar
 OPENAI_API_KEY=tu_clave
 ANTHROPIC_API_KEY=tu_clave
 HUGGINGFACE_API_KEY=tu_clave
-Activa un entorno virtual y ejecuta:
 
-bash
-Copiar
-Editar
+Activa un entorno virtual y ejecuta:
 pip install -r requirements.txt
 PYTHONPATH=. pytest
+
 🐳 ¿Cómo usarlo con Docker?
 Construye la imagen:
-
-bash
-Copiar
-Editar
 docker build -t llm-api-tester .
-Corre los tests:
 
-bash
-Copiar
-Editar
+Corre los tests:
 docker run --rm llm-api-tester
+
 📁 Estructura del proyecto
-bash
-Copiar
-Editar
 llm_api_tester/
 ├── src/
 │   └── llm_clients/
@@ -68,6 +55,7 @@ llm_api_tester/
 ├── requirements.txt
 ├── .env
 └── README.md
+
 ✨ Autora
 Proyecto creado como parte de mi aprendizaje en pruebas QA y modelos de lenguaje:
 
